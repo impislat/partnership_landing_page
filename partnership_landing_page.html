@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Партнерская программа по привлечению клиентов в юридический консалтинг. Ежедневные выплаты, обучение и доступ к базе знаний.">
+    <link rel="canonical" href="https://твой-сайт.рф">
+    
+    <title>Партнерская Программа | Стабильный доход</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#4F46E5', // Indigo 600
+                        secondary: '#10B981', // Emerald 500
+                        darkbg: '#0F172A', // Slate 900
+                        cardbg: '#1E293B', // Slate 800
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #F8FAFC;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #818CF8, #34D399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Fade in animation classes */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white relative">
+
+    <nav class="fixed w-full z-40 glass-card border-b-0 border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-line text-secondary text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight">System<span class="text-primary">Partner</span></span>
+                </div>
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#instructions" class="text-sm font-medium text-slate-300 hover:text-white transition">Инструкция</a>
+                    <a href="#agreement" class="text-sm font-medium text-slate-300 hover:text-white transition">Условия</a>
+                    <a href="#earnings" class="text-sm font-medium text-slate-300 hover:text-white transition">Заработок</a>
+                    <a href="#results" class="text-sm font-medium text-slate-300 hover:text-white transition">Результаты</a>
+                    <a href="#documents" class="text-sm font-medium text-slate-300 hover:text-white transition">Документы</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardbg border-t border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#instructions" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white">Инструкция</a>
+                <a href="#agreement" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white">Условия</a>
+                <a href="#earnings" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white">Заработок</a>
+                <a href="#results" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white">Результаты</a>
+                <a href="#documents" class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white">Документы</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-darkbg to-darkbg"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-section">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+                Постройте стабильный доход <br class="hidden sm:block">
+                в <span class="text-gradient">профессиональной системе</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400 mb-10">
+                Прозрачная модель работы, ежедневные выплаты и гарантированная поддержка. Станьте Агентом или руководителем команды Рекрутеров.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#instructions" class="px-8 py-4 bg-primary hover:bg-indigo-500 text-white rounded-xl font-semibold transition-all shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+                    Начать работу <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#earnings" class="px-8 py-4 glass-card hover:bg-slate-700 text-white rounded-xl font-semibold transition-all">
+                    Смотреть доходы
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="instructions" class="py-20 bg-slate-800/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Инструкция по старту</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Строгое соблюдение этих стандартов гарантирует вам стабильный поток клиентов и выплаты без лишних вложений в рекламу.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Step 1 -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden fade-in-section">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-bl-full -z-10"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary text-xl font-bold">1</div>
+                        <h3 class="text-xl font-bold">Подготовка профиля</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li><i class="fa-solid fa-check text-secondary mr-2"></i> Используйте существующий или новый аккаунт Авито.</li>
+                        <li><i class="fa-solid fa-check text-secondary mr-2"></i> Фото предоставляет Администратор, укажите реальное имя.</li>
+                        <li class="font-semibold text-white"><i class="fa-solid fa-triangle-exclamation text-yellow-500 mr-2"></i> Важно: Пройдите верификацию по документам. Это поднимает объявления в ТОП бесплатно.</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden fade-in-section">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-bl-full -z-10"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center text-secondary text-xl font-bold">2</div>
+                        <h3 class="text-xl font-bold">Запуск объявлений</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li><i class="fa-solid fa-check text-secondary mr-2"></i> Обязательная публикация базового объявления.</li>
+                        <li><i class="fa-solid fa-check text-secondary mr-2"></i> Масштабирование на любые города (расходы берет Партнер).</li>
+                        <li class="font-semibold text-white"><i class="fa-solid fa-lock text-primary mr-2"></i> Жесткий стандарт: Заголовок, описание и настройки — строго по указаниям Администратора.</li>
+                    </ul>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden fade-in-section">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-bl-full -z-10"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400 text-xl font-bold">3</div>
+                        <h3 class="text-xl font-bold">Обработка клиентов</h3>
+                    </div>
+                    <p class="text-slate-300 mb-4">Ваша цель — перевести клиента из Авито в группу ВК.</p>
+                    <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-700 mb-4">
+                        <span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Скрипт ответа:</span>
+                        <p class="text-sm italic mt-1 text-slate-300">«Здравствуйте! Чтобы решить ваш вопрос и получить консультацию, перейдите, пожалуйста, в нашу группу ВК [ссылка]. Там вам быстро помогут.»</p>
+                    </div>
+                    <p class="text-sm text-slate-400"><i class="fa-solid fa-circle-info text-blue-400 mr-1"></i> Не давайте юридических консультаций лично. Проверяйте Авито ежедневно!</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden fade-in-section">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-orange-500/10 rounded-bl-full -z-10"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center text-orange-400 text-xl font-bold">4</div>
+                        <h3 class="text-xl font-bold">Варианты работы</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-primary pl-4">
+                            <h4 class="font-bold text-white">Агент (Авито)</h4>
+                            <p class="text-sm text-slate-400">Прямая работа, перевод лидов в ВК, % с каждой оплаты.</p>
+                        </div>
+                        <div class="border-l-2 border-secondary pl-4">
+                            <h4 class="font-bold text-white">Рекрутер (Руководитель)</h4>
+                            <p class="text-sm text-slate-400">Привлечение до 8 сотрудников, обучение. Вы получаете +5% с продаж каждого сотрудника.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agreement" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Партнерское соглашение</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Полная прозрачность, легальность и гарантии для вашей безопасной работы.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-cardbg p-6 rounded-xl border border-slate-700 hover:border-primary/50 transition duration-300 fade-in-section">
+                    <i class="fa-solid fa-scale-balanced text-3xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Юридический статус</h3>
+                    <p class="text-sm text-slate-400">Договоры заключаются от имени Оператора. Мы несем ответственность за услуги. Вы — консультант по привлечению.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-cardbg p-6 rounded-xl border border-slate-700 hover:border-secondary/50 transition duration-300 fade-in-section">
+                    <i class="fa-solid fa-wallet text-3xl text-secondary mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Расходы и гарантии</h3>
+                    <p class="text-sm text-slate-400">Скрипты и система — бесплатно. Рекламу оплачивает Партнер. Если базовое объявление не дает лидов за 30 дней — компенсируем месяц размещения.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-cardbg p-6 rounded-xl border border-slate-700 hover:border-purple-500/50 transition duration-300 fade-in-section">
+                    <i class="fa-solid fa-money-bill-transfer text-3xl text-purple-400 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Ежедневные выплаты</h3>
+                    <p class="text-sm text-slate-400">Выплаты производятся ежедневно на вашу карту сразу после подтверждения успешной оплаты клиентом.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-cardbg p-6 rounded-xl border border-slate-700 hover:border-orange-500/50 transition duration-300 fade-in-section">
+                    <i class="fa-solid fa-shield-halved text-3xl text-orange-400 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Защита партнера</h3>
+                    <p class="text-sm text-slate-400">Лиды фиксируются по UTM/промокоду. Доступ к ежедневной выгрузке отчетов (PDF/XLS) исключает изменение цифр Оператором.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-cardbg p-6 rounded-xl border border-slate-700 hover:border-blue-500/50 transition duration-300 fade-in-section">
+                    <i class="fa-solid fa-rocket text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Тестовый период</h3>
+                    <p class="text-sm text-slate-400">Новым партнерам выдается «стартовый пакет» лидов для оценки конверсии до начала вложений в рекламу.</p>
+                </div>
+
+                 <!-- Card 6 -->
+                 <div class="bg-cardbg p-6 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition duration-300 fade-in-section">
+                    <i class="fa-solid fa-file-contract text-3xl text-emerald-400 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Официально</h3>
+                    <p class="text-sm text-slate-400">Работаем с физ. лицами (ГПХ) и самозанятыми. Все выплаты официальны и соответствуют законодательству.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="earnings" class="py-20 bg-slate-800/30 relative border-t border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gradient">План заработка</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Расчет на основе среднего чека услуги — 20 000 руб. Ваш доход зависит только от вашей продуктивности.</p>
+            </div>
+
+            <!-- Table -->
+            <div class="overflow-x-auto rounded-xl border border-slate-700 mb-12 fade-in-section glass-card">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-800/80 text-sm uppercase tracking-wider text-slate-300 border-b border-slate-700">
+                            <th class="p-4 sm:p-6 font-semibold">Статус партнера</th>
+                            <th class="p-4 sm:p-6 font-semibold">Сделок в мес.</th>
+                            <th class="p-4 sm:p-6 font-semibold">% Комиссии</th>
+                            <th class="p-4 sm:p-6 font-semibold">Доход с 1 сд.</th>
+                            <th class="p-4 sm:p-6 font-semibold text-right">Итого в мес.</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr class="hover:bg-slate-700/30 transition">
+                            <td class="p-4 sm:p-6 text-white font-medium flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-slate-400"></span> Новичок
+                            </td>
+                            <td class="p-4 sm:p-6 text-slate-300">5</td>
+                            <td class="p-4 sm:p-6 text-primary font-bold">20%</td>
+                            <td class="p-4 sm:p-6 text-slate-300">4 000 ₽</td>
+                            <td class="p-4 sm:p-6 font-bold text-white text-right">20 000 ₽</td>
+                        </tr>
+                        <tr class="hover:bg-slate-700/30 transition bg-primary/5">
+                            <td class="p-4 sm:p-6 text-white font-medium flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span> Профи (Turbo)
+                            </td>
+                            <td class="p-4 sm:p-6 text-slate-300">10</td>
+                            <td class="p-4 sm:p-6 text-primary font-bold">20% / 50%*</td>
+                            <td class="p-4 sm:p-6 text-slate-300">4 000 / 10 000 ₽</td>
+                            <td class="p-4 sm:p-6 font-bold text-white text-right">50 000 ₽</td>
+                        </tr>
+                        <tr class="hover:bg-slate-700/30 transition bg-secondary/5">
+                            <td class="p-4 sm:p-6 text-white font-medium flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-secondary"></span> Лидер (Рекрутер)
+                            </td>
+                            <td class="p-4 sm:p-6 text-slate-300">15+</td>
+                            <td class="p-4 sm:p-6 text-secondary font-bold">до 40%</td>
+                            <td class="p-4 sm:p-6 text-slate-300">8 000 ₽</td>
+                            <td class="p-4 sm:p-6 font-bold text-secondary text-right">120 000+ ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Logic Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-cardbg p-8 rounded-2xl border border-slate-700 fade-in-section">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-bolt text-yellow-400"></i> Система Turbo-Boost
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        * При достижении 10 оплаченных сделок в месяц, ваша комиссия на следующие 5 сделок <b>автоматически повышается до 50%</b>. Базовая комиссия рассчитывается от полной суммы без скрытых вычетов.
+                    </p>
+                </div>
+                
+                <div class="bg-cardbg p-8 rounded-2xl border border-slate-700 fade-in-section">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-users text-primary"></i> Масштабирование (x2 доход)
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        За каждого обученного сотрудника, совершившего сделку, ваша базовая комиссия растет на <b>+5% (до максимума 40%)</b>. При 40% вы получаете 8 000 руб. с одной сделки при тех же трудозатратах.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive Calculator -->
+            <div class="glass-card p-8 sm:p-12 rounded-3xl mb-16 fade-in-section border border-slate-700/50 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+                
+                <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center text-white">Интерактивный калькулятор дохода</h3>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Controls -->
+                    <div class="space-y-8">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <label class="text-slate-300 font-medium text-sm sm:text-base">Количество клиентов в месяц</label>
+                                <span id="calc-clients-val" class="font-bold text-primary text-xl">10</span>
+                            </div>
+                            <input type="range" id="calc-clients" min="1" max="50" value="10" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary">
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <label class="text-slate-300 font-medium text-sm sm:text-base">Средний чек (руб.)</label>
+                                <span id="calc-check-val" class="font-bold text-secondary text-xl">20 000 ₽</span>
+                            </div>
+                            <input type="range" id="calc-check" min="5000" max="100000" step="1000" value="20000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-secondary">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <label class="text-slate-300 font-medium text-sm sm:text-base">Ваша комиссия (%)</label>
+                                <span id="calc-percent-val" class="font-bold text-purple-400 text-xl">20%</span>
+                            </div>
+                            <input type="range" id="calc-percent" min="20" max="50" step="5" value="20" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500">
+                        </div>
+                    </div>
+                    
+                    <!-- Result -->
+                    <div class="bg-slate-900/80 p-8 rounded-2xl border border-slate-700 flex flex-col justify-center items-center text-center h-full shadow-2xl">
+                        <p class="text-slate-400 font-medium mb-2 uppercase tracking-widest text-xs sm:text-sm">Ваш потенциальный доход</p>
+                        <div class="text-4xl sm:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-4 drop-shadow-sm" id="calc-total">
+                            40 000 ₽
+                        </div>
+                        <p class="text-sm text-slate-500 max-w-xs">Сумма указана за месяц работы при выбранных вами параметрах.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Plan Timeline -->
+            <div class="glass-card p-8 sm:p-12 rounded-3xl fade-in-section">
+                <h3 class="text-2xl font-bold mb-8 text-center">Пошаговый план на первый месяц</h3>
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-600 before:to-transparent">
+                    
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-slate-900 bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">1</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-700 bg-slate-800 shadow">
+                            <h4 class="font-bold mb-1">Неделя 1</h4>
+                            <p class="text-sm text-slate-400">Изучение базы знаний, прохождение обучения, размещение первых объявлений (тестовый бюджет).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-slate-900 bg-secondary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">2</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-700 bg-slate-800 shadow">
+                            <h4 class="font-bold mb-1">Неделя 2</h4>
+                            <p class="text-sm text-slate-400">Первые диалоги с клиентами, закрытие 1-2 сделок, проверка эффективности выбранных площадок.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-slate-900 bg-purple-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"><i class="fa-solid fa-flag-checkered"></i></div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-slate-700 bg-slate-800 shadow">
+                            <h4 class="font-bold mb-1">Неделя 3-4</h4>
+                            <p class="text-sm text-slate-400">Работа над выходом на 10+ сделок для активации бонуса «Turbo-Boost».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results / Social Proof Section -->
+    <section id="results" class="py-20 relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Наши результаты</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Мы выстраиваем долгосрочные и прозрачные отношения. Присоединяйтесь к партнерам, которые уже зарабатывают.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Stat 1 -->
+                <div class="glass-card p-8 rounded-2xl text-center fade-in-section border border-slate-700 hover:-translate-y-2 hover:border-primary/50 transition-all duration-300">
+                    <div class="w-16 h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center text-primary text-2xl mb-4">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-4xl font-extrabold text-white mb-2">50+</h3>
+                    <p class="text-slate-400 font-medium">Активных партнеров</p>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="glass-card p-8 rounded-2xl text-center fade-in-section border border-slate-700 hover:-translate-y-2 hover:border-secondary/50 transition-all duration-300">
+                    <div class="w-16 h-16 mx-auto bg-secondary/20 rounded-full flex items-center justify-center text-secondary text-2xl mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-4xl font-extrabold text-white mb-2">от 10 000 ₽</h3>
+                    <p class="text-slate-400 font-medium">Средний доход новичка</p>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="glass-card p-8 rounded-2xl text-center fade-in-section border border-slate-700 hover:-translate-y-2 hover:border-purple-500/50 transition-all duration-300">
+                    <div class="w-16 h-16 mx-auto bg-purple-500/20 rounded-full flex items-center justify-center text-purple-400 text-2xl mb-4">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="text-4xl font-extrabold text-white mb-2">> 300 000 ₽</h3>
+                    <p class="text-slate-400 font-medium">Выплачено комиссионных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="py-20 bg-darkbg relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Материалы для скачивания</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Сохраните официальные документы, инструкции и подробный план заработка на свое устройство для удобного изучения.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Doc 1 -->
+                <a href="Инструкция по старту и рабочие стандарты.pdf" download class="glass-card p-6 rounded-2xl border border-slate-700 hover:border-primary hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group fade-in-section">
+                    <div class="w-14 h-14 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors shrink-0">
+                        <i class="fa-solid fa-file-pdf text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-white text-sm sm:text-base leading-tight mb-1 group-hover:text-primary transition-colors">Инструкция по старту и стандарты</h3>
+                        <p class="text-xs text-slate-400">PDF-документ</p>
+                    </div>
+                    <i class="fa-solid fa-download text-slate-500 group-hover:text-primary transition-colors text-xl"></i>
+                </a>
+
+                <!-- Doc 2 -->
+                <a href="Партнерское соглашение.pdf" download class="glass-card p-6 rounded-2xl border border-slate-700 hover:border-secondary hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group fade-in-section">
+                    <div class="w-14 h-14 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors shrink-0">
+                        <i class="fa-solid fa-file-pdf text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-white text-sm sm:text-base leading-tight mb-1 group-hover:text-secondary transition-colors">Партнерское соглашение</h3>
+                        <p class="text-xs text-slate-400">PDF-документ</p>
+                    </div>
+                    <i class="fa-solid fa-download text-slate-500 group-hover:text-secondary transition-colors text-xl"></i>
+                </a>
+
+                <!-- Doc 3 -->
+                <a href="План заработка.pdf" download class="glass-card p-6 rounded-2xl border border-slate-700 hover:border-purple-500 hover:-translate-y-1 transition-all duration-300 flex items-center gap-4 group fade-in-section">
+                    <div class="w-14 h-14 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors shrink-0">
+                        <i class="fa-solid fa-file-pdf text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-white text-sm sm:text-base leading-tight mb-1 group-hover:text-purple-400 transition-colors">План заработка</h3>
+                        <p class="text-xs text-slate-400">PDF-документ</p>
+                    </div>
+                    <i class="fa-solid fa-download text-slate-500 group-hover:text-purple-400 transition-colors text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-chart-line text-secondary text-xl"></i>
+                <span class="font-bold text-lg">System<span class="text-primary">Partner</span></span>
+            </div>
+            <p class="text-slate-500 text-sm text-center md:text-left">
+                Сотрудничество с нами — это не риск, а возможность построения стабильного дохода.
+            </p>
+            <div class="text-slate-500 text-sm">
+                &copy; 2026. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Telegram Floating Action Button -->
+    <a href="https://t.me/твой_ник" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-[#2AABEE] hover:bg-[#229ED9] p-4 rounded-full shadow-[0_4px_20px_rgba(42,171,238,0.5)] hover:shadow-[0_4px_25px_rgba(42,171,238,0.8)] hover:-translate-y-1 hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center w-14 h-14 group">
+        <i class="fa-brands fa-telegram text-3xl text-white group-hover:animate-pulse"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Intersection Observer for scroll animations (Fade in)
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Run once
+                    }
+                });
+            }, observerOptions);
+
+            const sections = document.querySelectorAll('.fade-in-section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Interactive Calculator Logic
+            const calcClients = document.getElementById('calc-clients');
+            const calcCheck = document.getElementById('calc-check');
+            const calcPercent = document.getElementById('calc-percent');
+            
+            const valClients = document.getElementById('calc-clients-val');
+            const valCheck = document.getElementById('calc-check-val');
+            const valPercent = document.getElementById('calc-percent-val');
+            const totalResult = document.getElementById('calc-total');
+
+            function updateCalculator() {
+                const clients = parseInt(calcClients.value);
+                const check = parseInt(calcCheck.value);
+                const percent = parseInt(calcPercent.value);
+
+                // Update text values next to sliders
+                valClients.textContent = clients;
+                valCheck.textContent = check.toLocaleString('ru-RU') + ' ₽';
+                valPercent.textContent = percent + '%';
+
+                // Calculate total income
+                const total = Math.round(clients * check * (percent / 100));
+                
+                // Animate total change
+                totalResult.style.opacity = '0.5';
+                setTimeout(() => {
+                    totalResult.textContent = total.toLocaleString('ru-RU') + ' ₽';
+                    totalResult.style.opacity = '1';
+                }, 100);
+            }
+
+            // Listeners for sliders
+            calcClients.addEventListener('input', updateCalculator);
+            calcCheck.addEventListener('input', updateCalculator);
+            calcPercent.addEventListener('input', updateCalculator);
+            
+            // Initial calculation on load
+            updateCalculator();
+        });
+    </script>
+</body>
+</html>
